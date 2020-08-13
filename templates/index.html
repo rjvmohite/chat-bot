@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<title>{{ title }}</title>
+{% endblock title %}
+
+{% block centre_content %}
+<h1>Hello, Guest!</h1>
+<p>Welcome to my chat-bot.</p>
+<form action="#" method="POST">
+    <p>Enter your message</p>
+    <p><input type="text" name="msg" /></p>
+    <p><input type="submit" value="submit" /></p>
+</form>
+</br>
+<p>{{ chat_response }} </p>
+{% endblock centre_content %}
